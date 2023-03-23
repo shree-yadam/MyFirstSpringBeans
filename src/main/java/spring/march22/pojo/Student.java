@@ -6,6 +6,8 @@ public class Student {
 	
 	
 	private Integer rollNo;
+	
+	private Address address;
 
 
 	public String getName() {
@@ -28,9 +30,19 @@ public class Student {
 	}
 
 
+	public Address getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+
 	@Override
 	public String toString() {
-		return "Student [name=" + name + ", rollNo=" + rollNo + "]";
+		return "Student [name=" + name + ", rollNo=" + rollNo + ", address=" + address + "]";
 	}
 	
 
