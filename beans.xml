@@ -11,4 +11,16 @@
 		<property name="name" value='"SDY"'></property>
 		<property name="age" value="10"></property>
 	</bean>
+	
+	<bean id="add2" name="address2"
+		class="spring.march22.pojo.Address">
+		<property name="city" value='"Bhopal"'></property>
+		<property name="state" value='"MP"'></property>
+	</bean>
+	<bean id="std2" name="student2"
+		class="spring.march22.pojo.Student">
+		<constructor-arg value='"ABC"'></constructor-arg>
+		<constructor-arg value="2"></constructor-arg>
+		<constructor-arg ref="add2"></constructor-arg>
+	</bean>
 </beans>

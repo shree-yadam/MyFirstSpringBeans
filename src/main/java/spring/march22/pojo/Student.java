@@ -14,6 +14,15 @@ public class Student {
 		System.out.println("Student constructor called ...");
 	}
 
+	public Student(String name, Integer rollNo, Address address) {
+		super();
+
+		System.out.println("Student constructor with fields called ...");
+		this.name = name;
+		this.rollNo = rollNo;
+		this.address = address;
+	}
+
 
 	public String getName() {
 		return name;

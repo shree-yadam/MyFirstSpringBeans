@@ -41,6 +41,15 @@ public class App
         System.out.println(student);
         
         ((ClassPathXmlApplicationContext)appCtx2).close();
+        
+        System.out.println("===================== Demo of Contructor args for brans =======================");
+        
+        ApplicationContext ctx2 = new FileSystemXmlApplicationContext("beans.xml");
+        Student student2 = (Student) ctx2.getBean("std2");
+        
+        ((FileSystemXmlApplicationContext)ctx2).close();
+        
+        System.out.println(student2);
        
        
        
