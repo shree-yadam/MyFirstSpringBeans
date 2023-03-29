@@ -6,6 +6,11 @@ public class Address {
 	
 	private String State;
 
+	public Address() {
+		super();
+		System.out.println("Address constructor called ...");
+	}
+
 	public String getCity() {
 		return city;
 	}

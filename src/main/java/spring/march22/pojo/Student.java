@@ -9,6 +9,11 @@ public class Student {
 	
 	private Address address;
 
+	public Student() {
+		super();
+		System.out.println("Student constructor called ...");
+	}
+
 
 	public String getName() {
 		return name;
