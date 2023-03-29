@@ -11,8 +11,8 @@
 		<property name="city" value='"OTTAWA"'></property>
 		<property name="state" value='"ON"'></property>
 	</bean>
-	<bean id="std1" name="student1"
-		class="spring.march22.pojo.Student">
+	<bean id="std1" name="student1" class="spring.march22.pojo.Student"
+		lazy-init="false">
 		<property name="name" value='"SDY"'></property>
 		<property name="rollNo" value="1"></property>
 		<property name="address" ref="add1"></property>
