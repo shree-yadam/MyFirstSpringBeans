@@ -42,7 +42,7 @@ public class App
         
         ((ClassPathXmlApplicationContext)appCtx2).close();
         
-        System.out.println("===================== Demo of Contructor args for brans =======================");
+        System.out.println("===================== Demo of Contructor args for beans =======================");
         
         ApplicationContext ctx2 = new FileSystemXmlApplicationContext("beans.xml");
         Student student2 = (Student) ctx2.getBean("std2");
@@ -50,8 +50,15 @@ public class App
         ((FileSystemXmlApplicationContext)ctx2).close();
         
         System.out.println(student2);
-       
-       
-       
+        
+        System.out.println("===================== Demo ofAutowiring =======================");
+        
+        ApplicationContext ctx3 = new ClassPathXmlApplicationContext("student_autowire_beans.xml");
+        Student student3 = (Student) ctx3.getBean("std3");
+        
+        ((ClassPathXmlApplicationContext)ctx3).close();
+        
+        System.out.println(student3);
+         
     }
 }
